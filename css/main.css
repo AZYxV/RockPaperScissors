@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 16px;
+}
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+section{
+    display: flex;
+    justify-content: space-around;
+}
+
+section article.joueur{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid black;
+    padding: 1%;
+    border-radius: 25px;
+}
+
+section article.joueur aside button{
+    border: 0px;
+    background-color: white;
+    padding-top: 4vh;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+
+section article.joueur aside button:hover{
+    cursor: pointer;
+    -webkit-transform: translate(2em,0);
+    -moz-transform: translate(2em,0);
+    -o-transform: translate(2em,0);
+    -ms-transform: translate(2em,0);
+    transform: translate(2em,0);
+}
+
+section article.ordinateur{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid black;
+    padding: 1%;
+    border-radius: 25px;
+}
+
+section article.ordinateur aside button{
+    border: 0px;
+    background-color: white;
+    padding-top: 4vh;
+}
