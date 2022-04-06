@@ -9,9 +9,35 @@ html{
     font-size: 16px;
 }
 
-h1{
+h1.title{
     text-align: center;
     text-transform: uppercase;
+    font-size: 3rem;
+    margin: 0.5em;
+}
+
+h1.title span{
+    font-size: 1rem;
+}
+
+section article.joueur h1{
+    color: rgb(51, 255, 0);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem;
+}
+
+section article.ordinateur h1{
+    color: rgb(207, 76, 76);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem;
+}
+
+section article.results h1{
+    color: rgb(245, 143, 26);
+    text-transform: uppercase;
+    text-align: center;
     font-size: 2rem;
 }
 
@@ -61,4 +87,13 @@ section article.ordinateur aside button{
     border: 0px;
     background-color: white;
     padding-top: 4vh;
+}
+
+section article.results{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid black;
+    padding: 1%;
+    border-radius: 25px;
 }
