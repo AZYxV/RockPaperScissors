@@ -1,4 +1,7 @@
 const selectionButtons = document.querySelectorAll('[data-selection]')
+const finalColumn = document.querySelectorAll('[data-final-column]')
+const yourScore = document.querySelectorAll('[data-your-score')
+const computerScore = document.querySelectorAll('[data-computer-score')
 const SELECTIONS = [
     {
         name: 'pierre',
@@ -16,6 +19,7 @@ const SELECTIONS = [
         beats: 'feuille'
     }
 ]
+
 selectionButtons.forEach(selectionButton => {
     selectionButton.addEventListener('click', e => {
       const selectionName = selectionButton.dataset.selection
@@ -23,25 +27,8 @@ selectionButtons.forEach(selectionButton => {
       makeSelection(selection)
     })
   })
-
-function makeSelection(selection) {
-    const computerSelection = randomSelection()
-    const yourWinner = isWinner(selection, computerSelection)
-    const computerWinner = isWinner(computerSelection, selection)
-    
-    addSelectionResult(computerSelection, computerWinner)
-    addSelectionResult(selection, yourWinner)
-  }
-
-function addSelectionResult(selection, winner){
-
-}
-
-function isWinner(selection, opponentSelection){
-    return selection.beats === opponentSelection.name
-}  
-
-function randomSelection(){
+  
+function randomSelection() {
     const randomIndex = Math.floor(Math.random() * SELECTIONS.length)
     return SELECTIONS[randomIndex]
-}
+  }
