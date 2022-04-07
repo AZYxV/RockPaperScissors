@@ -10,34 +10,28 @@
 <body>
     <h1 class="title">Pierre Feuille Ciseaux<span>by AZYxV</span></h1>
     <section>
-        <article class="joueur">
-            <h1>Séléction</h1>
+        <article class="selections">
             <aside>
-                <button class="pierre"><img src="./assets/pierre.png" alt="Pierre" width="80px" height="150px"></button>
+                <button class="selection pierre" data-selection="pierre">✊</button>
             </aside>
             <aside>
-                <button class="papier"><img src="./assets/papier.png" alt="Papier" width="80px" height="150px"></button>
+                <button class="selection papier" data-selection="feuille">✋</button>
             </aside>
             <aside>
-                <button class="ciseau"><img src="./assets/ciseau.png" alt="Ciseau" width="80px" height="150px"></button>
+                <button class="selection ciseau" data-selection="ciseau">✌️</button>
             </aside>
-        </article>
-        <article class="ordinateur">
-            <h1>Ordinateur</h1>
-            <aside>
-                <button class="pcpierre"><img src="./assets/pierre.png" alt="Pierre" width="80px" height="150px"></button>
-            </aside>
-            <aside>
-                <button class="pcpapier"><img src="./assets/papier.png" alt="Papier" width="80px" height="150px"></button>
-            </aside>
-            <aside>
-                <button class="pcciseau"><img src="./assets/ciseau.png" alt="Ciseau" width="80px" height="150px"></button>
-            </aside>
-        </article>
-        <article class="results">
-            <h1>Résultats</h1>
         </article>
     </section>
-<script type="Javascript" src="./js/script.js"></script>
+    <section class="results">
+        <article>
+            <h2>Vous<span class="result-score">0</span></h2>
+        </article>
+        <article>
+            <h2>Ordinateur<span class="result-score">0</span></h2>
+        </article>
+        <!-- <div class="result-selection winner">✊</div>
+        <div class="result-selection">✌️</div> -->
+    </section>
+<script src="./js/script.js"></script>
 </body>
 </html>

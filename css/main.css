@@ -20,7 +20,7 @@ h1.title span{
     font-size: 1rem;
 }
 
-section article.joueur h1{
+section article.selections h1{
     color: rgb(51, 255, 0);
     text-transform: uppercase;
     text-align: center;
@@ -46,54 +46,49 @@ section{
     justify-content: space-around;
 }
 
-section article.joueur{
+section article.selections{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 3px solid black;
-    padding: 1%;
-    border-radius: 25px;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
-section article.joueur aside button{
+section article.selections aside button{
     border: 0px;
     background-color: white;
     padding-top: 4vh;
-    -webkit-transition: 0.5s ease-in-out;
-    -moz-transition: 0.5s ease-in-out;
-    -o-transition: 0.5s ease-in-out;
-    transition: 0.5s ease-in-out;
+    font-size: 7rem;
+    padding: 0vh 5vw 0vh 5vw;
+    transition: 100ms;
+
 }
 
-section article.joueur aside button:hover{
+section article.selections aside button:hover{
     cursor: pointer;
-    -webkit-transform: translate(2em,0);
-    -moz-transform: translate(2em,0);
-    -o-transform: translate(2em,0);
-    -ms-transform: translate(2em,0);
-    transform: translate(2em,0);
+    transform: scale(1.2);
+
 }
 
-section article.ordinateur{
-    display: flex;
-    flex-direction: column;
+section.results{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
     align-items: center;
-    border: 3px solid black;
-    padding: 1%;
-    border-radius: 25px;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 1rem;
 }
 
-section article.ordinateur aside button{
-    border: 0px;
-    background-color: white;
-    padding-top: 4vh;
+.result-score{
+    margin-left: .3rem;
+    font-size: 1rem;
+    color: #333;
 }
 
-section article.results{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 3px solid black;
-    padding: 1%;
-    border-radius: 25px;
+.result-selection{
+    opacity: .5;
+    font-size: 3rem;
+}
+
+.result-selection.winner{
+    opacity: 1;
+    font-size: 4rem;
 }
