@@ -10,27 +10,28 @@
 <body>
     <h1 class="title">Pierre Feuille Ciseaux<span>by AZYxV</span></h1>
     <section>
-        <article class="selections">
+        <article class="select">
             <aside>
-                <button class="selection pierre" data-selection="pierre">✊</button>
+                <button class="selectionj pierre" value="0">✊</button>
             </aside>
             <aside>
-                <button class="selection papier" data-selection="feuille">✋</button>
+                <button class="selectionj papier" value="1">✋</button>
             </aside>
             <aside>
-                <button class="selection ciseau" data-selection="ciseau">✌️</button>
+                <button class="selectionj ciseau" value="2">✌️</button>
             </aside>
         </article>
     </section>
     <section class="results">
         <article>
-            <h2>Vous<span class="result-score" data-your-score>0</span></h2>
+            <h2>Victoire<em id="vic" class="result-score">0</em></h2>
         </article>
-        <article data-final-column>
-            <h2>Ordinateur<span class="result-score" data-computer-score>0</span></h2>
+        <article>
+            <h2>Defaite<em id="def" class="result-score">0</em></h2>
         </article>
-        <!-- <div class="result-selection winner">✊</div>
-        <div class="result-selection">✌️</div> -->
+        <article>
+            <h2>Nul<em id="nul" class="result-score">0</em></h2>
+        </article>
     </section>
 <script src="./js/script.js"></script>
 </body>

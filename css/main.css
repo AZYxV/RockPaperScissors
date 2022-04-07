@@ -20,7 +20,7 @@ h1.title span{
     font-size: 1rem;
 }
 
-section article.selections h1{
+section article.select h1{
     color: rgb(51, 255, 0);
     text-transform: uppercase;
     text-align: center;
@@ -46,13 +46,13 @@ section{
     justify-content: space-around;
 }
 
-section article.selections{
+section article.select{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-section article.selections aside button{
+section article.select aside button{
     border: 0px;
     background-color: white;
     padding-top: 4vh;
@@ -62,7 +62,7 @@ section article.selections aside button{
 
 }
 
-section article.selections aside button:hover{
+section article.select aside button:hover{
     cursor: pointer;
     transform: scale(1.2);
 
@@ -73,7 +73,7 @@ section.results{
     justify-content: center;
     justify-items: center;
     align-items: center;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     margin-top: 1rem;
 }
 
@@ -81,14 +81,4 @@ section.results{
     margin-left: .3rem;
     font-size: 1rem;
     color: #333;
-}
-
-.result-selection{
-    opacity: .5;
-    font-size: 3rem;
-}
-
-.result-selection.winner{
-    opacity: 1;
-    font-size: 4rem;
 }
